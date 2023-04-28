@@ -12,7 +12,7 @@ As estruturas de ordenamento escolhidas para o projeto são:
 
 ## Dataset
 
-O dataset utilizado para ordenação é um conjunto de dados aleatórios gerados pelo script `data_generator.py`. O arquivo `data.txt` contém N números inteiros separados por espaços.
+O dataset utilizado para ordenação está disponível em: `https://www.kaggle.com/datasets/gauthamp10/google-playstore-apps`
 
 ## Como Executar
 
