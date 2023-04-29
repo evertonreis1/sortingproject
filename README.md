@@ -12,7 +12,7 @@ As estruturas de ordenamento escolhidas para o projeto são:
 
 ## Dataset
 
-O dataset utilizado para ordenação está disponível em: `https://www.kaggle.com/datasets/gauthamp10/google-playstore-apps`
+O dataset utilizado para ordenação está disponível em: [Google Play Store Apps - Kaggle](https://www.kaggle.com/datasets/gauthamp10/google-playstore-apps).
 
 ## Como Executar
 
