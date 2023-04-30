@@ -32,7 +32,8 @@ Cada estrutura de ordenamento está implementada em um arquivo separado. Para ex
 
 ### Counting Sort (Python)
 
-1. Certifique-se de ter o Python ou superior instalado em sua máquina
+Para executar o arquivo do algoritmo de counting sort:
+1. Certifique-se de ter o Python instalado em sua máquina
 2. No terminal, navegue até o diretório do projeto
 3. Execute o comando `python counting_sort.py`
 
