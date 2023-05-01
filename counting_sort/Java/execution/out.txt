@@ -1,0 +1,7 @@
+Tempo de execução médio (0 a 9): 31 ms.
+Tempo de execução médio (0 a 99): 33 ms.
+Tempo de execução médio (0 a 999): 59 ms.
+Tempo de execução médio (0 a 9999): 42 ms.
+Tempo de execução médio (0 a 99999): 51 ms.
+Tempo de execução médio (0 a 999999): 151 ms.
+Tempo de execução médio (0 a 9999999): 289 ms.
