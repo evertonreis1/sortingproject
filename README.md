@@ -30,14 +30,15 @@ Cada estrutura de ordenamento está implementada em um arquivo separado. Para ex
 2. No terminal, navegue até o diretório do projeto
 3. Execute o comando `node timsort.js`
 
-### Counting Sort (Python)
+### Counting Sort (Python e Java)
 
-Para executar o arquivo do algoritmo de counting sort:
+Para executar o arquivo do algoritmo de counting sort (versão em Python):
 1. Certifique-se de ter o Python instalado em sua máquina
 2. No terminal, navegue até o diretório do projeto
 3. Execute o comando `python counting_sort.py`
 
-OBS: 
+> **Considerações sobre o código em Python:**
+> 
 > O programa foi executado através do Google Colaboratory, com imporatação da base de dados pelo Google Drive. Para realizar a execução na sua máquina, certifique sobre a versão do Python instalada e sobre o arquivo da base usado neste projeto, que deve estar no mesmo diretório do projeto.
 >
 > Para fazer a leitura do CSV corretamente, modifique o código de importação, substituindo a importação do Google Drive para a importação com a biblioteca **pandas**, com os comandos:
@@ -47,9 +48,34 @@ OBS:
 > 
 > data = pd.read_csv('caminho/Google-Playstore.csv')
 > ```
-
-Nos códigos [Counting_sort.ipynb](counting_sort/Counting_sort.ipynb) (que tem uma descrição detalhada) e [counting_sort.py](counting_sort/counting_sort.py) 
+>
+> Nos códigos [Counting_sort.ipynb](counting_sort/Counting_sort.ipynb) (que tem uma descrição detalhada) e [counting_sort.py](counting_sort/counting_sort.py) 
 (que tem o apenas o código), isso é descrito de forma melhor.
+
+> **Considerações sobre o código em Java:**
+>
+> Em Java, o código foi testado com base em 7 listas de números inteiros gerados aleatoriamente com a classe importada ```Random```, implementada no código 
+> da classe [```NumberListGenerator.java```](counting_sort/Java/src/NumberListGenerator.java), que retorna uma lista de inteiros aleatórios dentro de um intervalo definido e uma quantidade de elementos passada.
+>
+> A implementação do algoritmo de *ordenação em contagem* foi feita de uma forma um pouco diferente do Python, na classe [```CountingSort.java```](counting_sort/Java/src/CountingSort.java), já que feita com base numa lista mais simples. Há, nesse caso, a garantia de que o tamanho da lista de contagem
+> será pelo menos igual ao da lista original de análise, além de algumas de diferenças de sintaxe de código.
+>
+> Foram geradas 7 listas de 1 milhão de elementos cada para testar o algoritmo em 7 intervalos de valores gerados: [0,9], [0,99], [0,999], [0,9999],
+> [0,99999], [0,999999] e [0,9999999], criadas na classe principal [**```Main.java```**](counting_sort/Java/src/Main.java).
+>
+> Após isso, foi utilizado método do sistema ```currentTimeMillis()``` para medir o tempo de execução da ordenação em cada lista, e para garantir
+> um tempo médio útil, tal medida foi refeita num loop 1000 vezes, para gerar um tempo médio.
+> 
+> O tempos médios para cada lista foram colocados no arquivo [```out.txt```](counting_sort/Java/execution/out.txt).
+> 
+> OBS.: apesar dos valores terem sido gerados de forma média, as limitações no sistema de execução tornam aqueles não confiáveis. 
+>
+> A conclusão mais precisa possível para esse caso é de que o algoritmo se torna *cada vez menos eficiente conforme a variação do intervalo de valores
+> da lista cresce*. 
+>
+> Ou seja, com uma eficiência **O(n+k)**, onde *n* é o número de elementos da lista e *k* é o intervalo de valores, a velocidade de execução é 
+> inversamente proporcional ao valor de k e estática com relação ao valor n.
+
 
 ## Resultados
 
