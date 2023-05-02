@@ -8,7 +8,7 @@ from utils import getExecTime
 
 from timSort import timSort
 
-DATABASE = "src/database/Google-Playstore.csv"
+DATABASE = "timSort/Database/Google-Playstore.csv"
 ROWS = 10000
 COLUMN = 'Installs'
 
