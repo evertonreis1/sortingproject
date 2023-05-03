@@ -49,8 +49,7 @@ Para executar o arquivo do algoritmo de counting sort (versão em Python):
 > data = pd.read_csv('caminho/Google-Playstore.csv')
 > ```
 >
-> Nos códigos [Counting_sort.ipynb](counting_sort/Counting_sort.ipynb) (que tem uma descrição detalhada) e [counting_sort.py](counting_sort/counting_sort.py) 
-(que tem o apenas o código), isso é descrito de forma melhor.
+> O código [counting_sort.py](counting_sort/counting_sort.py) tem o código de implementação do algoritmo.
 
 > **Considerações sobre o código em Java:**
 >
@@ -76,6 +75,7 @@ Para executar o arquivo do algoritmo de counting sort (versão em Python):
 > Ou seja, com uma eficiência **O(n+k)**, onde *n* é o número de elementos da lista e *k* é o intervalo de valores, a velocidade de execução é 
 > inversamente proporcional ao valor de k e estática com relação ao valor n.
 
+O texto [exp.md](counting_sort/exp.md) tem algumas explicações e considerações sobre a implementação.
 
 ## Resultados
 
